@@ -1,0 +1,5 @@
+<button class="btn btn-primary" (click)='display()'>Display Details</button>
+<p *ngIf="toggle">Secret = Tuna</p>
+<p *ngFor="let clicks of allClicks; let i = index"
+[ngStyle]="{backgroundColor: i >= 5 ? 'blue' : 'transparent'}"
+[ngClass]="{'white-text': i >=5 }">{{clicks}}</p>
